@@ -12,7 +12,7 @@ export default class Home extends React.Component {
         return (
             <div>
                 <div>
-                    Welcome
+                    Hi, I'm Brandon!
                 </div>
                 <NavButton buttonText = "Why You Should Hire Me" />
                 <NavButton buttonText = "What I Do For Fun" />
