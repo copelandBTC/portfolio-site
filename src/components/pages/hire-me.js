@@ -1,117 +1,65 @@
 import React from 'react';
 import NavButton from '../nav-button';
+import TechListItem from '../tech-list-item';
+import TechList from '../tech-list';
+import '../../styles/hire-me.css';
+import { Card, Button } from 'react-bootstrap';
+import SectionCard from '../section-card';
+import CardTitle from '../card-title';
 
 export default class HireMe extends React.Component {
     state = {};
 
     constructor(props) {
         super();
+        this.techList = [
+            <TechListItem imgSrc="https://via.placeholder.com/75" itemName="JavaScript" />,
+            <TechListItem imgSrc="https://via.placeholder.com/75" itemName="TypeScript" />,
+            <TechListItem imgSrc="https://via.placeholder.com/75" itemName="React" />,
+            <TechListItem imgSrc="https://via.placeholder.com/75" itemName="Redux" />,
+            <TechListItem imgSrc="https://via.placeholder.com/75" itemName="Vue" />,
+            <TechListItem imgSrc="https://via.placeholder.com/75" itemName="C#" />,
+            <TechListItem imgSrc="https://via.placeholder.com/75" itemName="Java" />,
+            <TechListItem imgSrc="https://via.placeholder.com/75" itemName="Python" />,
+            <TechListItem imgSrc="https://via.placeholder.com/75" itemName="Git" />,
+        ];
     }
 
     render() {
         return (
             <div>
-                <section id="about-career">
-                    <h2>The Beginning of My Journey</h2>
-                    <div>
-                        I could fly when I was younger. Not only could I fly, I had super strength,
-                        I could throw fireballs, and I had the courage
-                        to swing a sword at evil and save a princess. When I held a controller in
-                        my hands, I could do all that and much more. The games I played when I was
-                        a boy took me to other worlds. When I grew up, it dawned on me one day
-                        that I had the power to create my own worlds. Before I knew it, I had
-                        "how to program" in my search bar, and so began a new journey. 
+                <Button block size="large" style={{ padding: "1rem 1.5rem", color: 'white', background: '#0b2e13', border: '#0b2e13', marginBottom: "40px" }}>My Resume</Button>
+                <SectionCard id="education">
+                    <CardTitle>MY EDUCATION</CardTitle>
+                    <Card.Text>Sam Houston State University</Card.Text>
+                    <Card.Text>Huntsville, TX</Card.Text>
+                    <Card.Text>Bachelor's of Computer Science</Card.Text>
+                    <Card.Text>3.6 Major GPA</Card.Text>
+                </SectionCard>
+                <SectionCard id="work">
+                    <CardTitle>MY CAREER SO FAR</CardTitle>
+                    {/* <div> */}
+                        <Card.Text>PERQ</Card.Text>
+                        <Card.Text>Indianapolis, IN</Card.Text>
+                        <Card.Text>Software Developer</Card.Text>
+                        <Card.Text>July 2018 - October 2019</Card.Text>
+                    {/* </div> */}
+                    <hr />
+                    {/* <div> */}
+                        <Card.Text>Infosys</Card.Text>
+                        <Card.Text>Indianapolis, IN</Card.Text>
+                        <Card.Text>Software Developer</Card.Text>
+                        <Card.Text>September 2017 - July 2018</Card.Text>
+                    {/* </div> */}
+                </SectionCard>
+                <SectionCard id="tech">
+                    <CardTitle>TECHNOLOGIES I'VE USED</CardTitle>
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                        <TechList listItems={ this.techList.slice(0, 3) } />
+                        <TechList listItems={ this.techList.slice(3, 6) } />
+                        <TechList listItems={ this.techList.slice(6) } />
                     </div>
-                </section>
-                <button>My Resume</button>
-                <section id="education">
-                    <h3>MY EDUCATION</h3>
-                    <p>Sam Houston State University</p>
-                    <p>Huntsville, TX</p>
-                    <p>Bachelor's of Computer Science</p>
-                    <p>3.6 Major GPA</p>
-                </section>
-                <section id="work">
-                    <h3>MY CAREER SO FAR</h3>
-                    <div>
-                        <p>PERQ</p>
-                        <p>Indianapolis, IN</p>
-                        <p>Software Developer</p>
-                        <p>July 2018 - October 2019</p>
-                    </div>
-                    <div>~ * ~</div>
-                    <div>
-                        <p>Infosys</p>
-                        <p>Indianapolis, IN</p>
-                        <p>Software Developer</p>
-                        <p>September 2017 - July 2018</p>
-                    </div>
-                </section>
-                <section id="tech">
-                    <h3>TECHNOLOGIES I'VE USED</h3>
-                    <ul>
-                        <li>
-                            <div>
-                                <img src="https://via.placeholder.com/50" />
-                                <p>JavaScript</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <img src="https://via.placeholder.com/50" />
-                                <p>TypeScript</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <img src="https://via.placeholder.com/50" />
-                                <p>React</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <img src="https://via.placeholder.com/50" />
-                                <p>Redux</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <img src="https://via.placeholder.com/50" />
-                                <p>Vue</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <img src="https://via.placeholder.com/50" />
-                                <p>C#</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <img src="https://via.placeholder.com/50" />
-                                <p>Visual Studio</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <img src="https://via.placeholder.com/50" />
-                                <p>Java</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <img src="https://via.placeholder.com/50" />
-                                <p>Python</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <img src="https://via.placeholder.com/50" />
-                                <p>Git</p>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
+                </SectionCard>
             </div>
         )
     }
