@@ -14,9 +14,6 @@ export default class Home extends React.Component {
                 <div>
                     Hi, I'm Brandon!
                 </div>
-                <NavButton buttonText = "Why You Should Hire Me" />
-                <NavButton buttonText = "What I Do For Fun" />
-                <NavButton buttonText = "Contact" />
             </div>
         )
     }

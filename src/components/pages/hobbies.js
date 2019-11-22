@@ -1,5 +1,6 @@
 import React from 'react';
 import NavButton from '../nav-button';
+import Page from './page';
 
 export default class Hobbies extends React.Component {
     state = {};
@@ -10,7 +11,7 @@ export default class Hobbies extends React.Component {
 
     render() {
         return (
-            <div>
+            <Page>
                 <section id="about-hobbies">
                     <h2>
                         I Have Quite a Few Hobbies
@@ -53,7 +54,7 @@ export default class Hobbies extends React.Component {
                         <button>English (American)</button>
                     </div>
                 </section>
-            </div>
+            </Page>
         )
     }
 }

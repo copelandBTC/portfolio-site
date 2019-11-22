@@ -1,5 +1,6 @@
 import React from 'react';
 import NavButton from '../nav-button';
+import Page from './page';
 
 export default class contact extends React.Component {
     state = {};
@@ -10,7 +11,7 @@ export default class contact extends React.Component {
 
     render() {
         return (
-            <div>
+            <Page>
                 <section id="contact">
                     <h2>
                         Don't Be a Stranger
@@ -20,7 +21,7 @@ export default class contact extends React.Component {
                         <button>Email</button>
                     </div>
                 </section>
-            </div>
+            </Page>
         )
     }
 }

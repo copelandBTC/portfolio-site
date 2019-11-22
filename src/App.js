@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Page from './components/pages/page';
 import Home from './components/pages/home';
 import HireMe from './components/pages/hire-me';
 import Hobbies from './components/pages/hobbies';

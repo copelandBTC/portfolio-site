@@ -1,15 +1,3 @@
-body {
-    font-family: 'Varela Round';
-    display: flex;
-    justify-content: center;
-    color: #0b2e13;
-    background: rgb(35,255,182);
-    background: -moz-linear-gradient(180deg, rgba(35,255,182,1) 0%, rgba(91,255,202,1) 78%);
-    background: -webkit-linear-gradient(180deg, rgba(35,255,182,1) 0%, rgba(91,255,202,1) 78%);
-    background: linear-gradient(180deg, rgba(35,255,182,1) 0%, rgba(91,255,202,1) 78%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#23ffb6",endColorstr="#5bffca",GradientType=1);
-}
-
 h2 {
     font-size: 40px;
     font-weight: 900;

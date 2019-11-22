@@ -6,6 +6,7 @@ import '../../styles/hire-me.css';
 import { Card, Button } from 'react-bootstrap';
 import SectionCard from '../section-card';
 import CardTitle from '../card-title';
+import Page from './page';
 
 export default class HireMe extends React.Component {
     state = {};
@@ -27,7 +28,7 @@ export default class HireMe extends React.Component {
 
     render() {
         return (
-            <div>
+            <Page>
                 <Button block size="large" style={{ padding: "1rem 1.5rem", color: 'white', background: '#0b2e13', border: '#0b2e13', marginBottom: "40px" }}>My Resume</Button>
                 <SectionCard id="education">
                     <CardTitle>MY EDUCATION</CardTitle>
@@ -38,19 +39,15 @@ export default class HireMe extends React.Component {
                 </SectionCard>
                 <SectionCard id="work">
                     <CardTitle>MY CAREER SO FAR</CardTitle>
-                    {/* <div> */}
                         <Card.Text>PERQ</Card.Text>
                         <Card.Text>Indianapolis, IN</Card.Text>
                         <Card.Text>Software Developer</Card.Text>
                         <Card.Text>July 2018 - October 2019</Card.Text>
-                    {/* </div> */}
                     <hr />
-                    {/* <div> */}
                         <Card.Text>Infosys</Card.Text>
                         <Card.Text>Indianapolis, IN</Card.Text>
                         <Card.Text>Software Developer</Card.Text>
                         <Card.Text>September 2017 - July 2018</Card.Text>
-                    {/* </div> */}
                 </SectionCard>
                 <SectionCard id="tech">
                     <CardTitle>TECHNOLOGIES I'VE USED</CardTitle>
@@ -60,7 +57,7 @@ export default class HireMe extends React.Component {
                         <TechList listItems={ this.techList.slice(6) } />
                     </div>
                 </SectionCard>
-            </div>
+            </Page>
         )
     }
 }
