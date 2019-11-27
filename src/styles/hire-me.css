@@ -13,4 +13,18 @@ hr {
     border-left-width: 150px;
     border-right-width: 150px;
     border-color: #0b2e13; 
-  } 
+}
+
+.resumeButton {
+    padding: 1rem 1.5rem;
+    color: #d4fff4;
+    background: #0b2e13;
+    border-color: #0b2e13;
+    margin-bottom: 40px;
+}
+
+.resumeButton:hover {
+    color: #d4fff4;
+    background: #0b2e13;
+    border-color: #0b2e13;
+}

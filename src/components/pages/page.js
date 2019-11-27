@@ -13,14 +13,14 @@ export default class Page extends React.Component {
         return (
             <div>
                 <header>
-                    <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly" }}>
+                    <div class="NavButtonSection">
                         <NavButton buttonText = "Why You Should Hire Me" />
                         <NavButton buttonText = "What I Do For Fun" />
                         <NavButton buttonText = "Contact" />
                     </div>
                 </header>
                 { this.props.children }
-                <footer style={{ display: "flex", justifyContent: "center" }}>
+                <footer>
                     Made by Brandon Copeland © { new Date().getFullYear() }
                 </footer>
             </div>

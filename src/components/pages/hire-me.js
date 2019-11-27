@@ -29,7 +29,7 @@ export default class HireMe extends React.Component {
     render() {
         return (
             <Page>
-                <Button block size="large" style={{ padding: "1rem 1.5rem", color: 'white', background: '#0b2e13', border: '#0b2e13', marginBottom: "40px" }}>My Resume</Button>
+                <Button block className="resumeButton" size="large">My Resume</Button>
                 <SectionCard id="education">
                     <CardTitle>MY EDUCATION</CardTitle>
                     <Card.Text>Sam Houston State University</Card.Text>

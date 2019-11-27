@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, NavLink } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
+import '../styles/nav-button.css';
 
 export default class NavButton extends React.Component {
   state = {
@@ -25,7 +26,7 @@ export default class NavButton extends React.Component {
 	  return (
 		<div>
 			<NavLink to={`/${this.state.path}`}>
-				<Button size="large" className="clickable" style={{ width: "200px", height: "75px" }}>
+				<Button size="large" className="navButton">
 					{ this.state.buttonText }
 				</Button>
 			</NavLink>
