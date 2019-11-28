@@ -12,13 +12,16 @@ export default class Page extends React.Component {
     render() {
         return (
             <div>
-                <header>
-                    <div class="NavButtonSection">
-                        <NavButton buttonText = "Why You Should Hire Me" />
-                        <NavButton buttonText = "What I Do For Fun" />
-                        <NavButton buttonText = "Contact" />
-                    </div>
-                </header>
+                <div>
+                    <header>
+                        <div className="NavButtonSection">
+                            <NavButton buttonText = "Why You Should Hire Me" />
+                            <NavButton buttonText = "What I Do For Fun" />
+                            <NavButton buttonText = "Contact" />
+                        </div>
+                    </header>
+                </div>
+                <div></div>
                 { this.props.children }
                 <footer>
                     Made by Brandon Copeland © { new Date().getFullYear() }

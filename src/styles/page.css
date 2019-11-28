@@ -1,13 +1,27 @@
+:themeColors {
+    --dark-color: #0b2e13;
+    --light-color: #d4fff4;
+    --gradient-start: #23ffb6;
+    --gradient-end: #5bffca;
+}
+
+/* html {
+    height: 100%;
+} */
+
 body {
+    /* height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
     font-family: 'Varela Round';
     display: flex;
     justify-content: center;
-    color: #0b2e13;
-    background: rgb(35,255,182);
-    background: -moz-linear-gradient(180deg, rgba(35,255,182,1) 0%, rgba(91,255,202,1) 78%);
-    background: -webkit-linear-gradient(180deg, rgba(35,255,182,1) 0%, rgba(91,255,202,1) 78%);
-    background: linear-gradient(180deg, rgba(35,255,182,1) 0%, rgba(91,255,202,1) 78%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#23ffb6",endColorstr="#5bffca",GradientType=1);
+    color: var(--dark-color);
+    background: -moz-linear-gradient(180deg, var(--gradient-start) 0%, var(--gradient-end) 78%);
+    background: -webkit-linear-gradient(180deg, var(--gradient-start) 0%, var(--gradient-end) 78%);
+    background: linear-gradient(180deg, var(--gradient-start) 0%, var(--gradient-end) 78%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--gradient-start),endColorstr=var(--gradient-end),GradientType=1);
 }
 
 header {
@@ -25,4 +39,28 @@ footer {
 .NavButtonSection {
     display: flex;
     flex-direction: row;
+}
+
+.sectionCard {
+    width: '40rem';
+    background: var(--light-color);
+    margin-right: 400px;
+    margin-left: 400px;
+    margin-bottom: 40px;
+    border-radius: 3%;
+    box-shadow: 5px 5px 5px var(--dark-color);
+}
+
+.button {
+    padding: 1rem 1.5rem;
+    color: var(--light-color);
+    background: var(--dark-color);
+    border-color: var(--dark-color);
+    margin-bottom: 40px;
+}
+
+.button:hover {
+    color: var(--light-color);
+    background: var(--dark-color);
+    border-color: var(--dark-color);
 }

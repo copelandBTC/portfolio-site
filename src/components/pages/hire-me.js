@@ -7,6 +7,7 @@ import { Card, Button } from 'react-bootstrap';
 import SectionCard from '../section-card';
 import CardTitle from '../card-title';
 import Page from './page';
+import { rootCertificates } from 'tls';
 
 export default class HireMe extends React.Component {
     state = {};
@@ -26,10 +27,18 @@ export default class HireMe extends React.Component {
         ];
     }
 
+    componentWillMount() {
+        var themeColors = document.documentElement;
+        themeColors.style.setProperty('--dark-color', '#0b2e13');
+        themeColors.style.setProperty('--light-color', '#d4fff4');
+        themeColors.style.setProperty('--gradient-start', '#23ffb6');
+        themeColors.style.setProperty('--gradient-end', '#5bffca');
+    }
+
     render() {
         return (
             <Page>
-                <Button block className="resumeButton" size="large">My Resume</Button>
+                <Button className="button" size="large">My Resume</Button>
                 <SectionCard id="education">
                     <CardTitle>MY EDUCATION</CardTitle>
                     <Card.Text>Sam Houston State University</Card.Text>

@@ -26,7 +26,7 @@ export default class NavButton extends React.Component {
 	  return (
 		<div>
 			<NavLink to={`/${this.state.path}`}>
-				<Button size="large" className="navButton">
+				<Button size="large" className="button navButton">
 					{ this.state.buttonText }
 				</Button>
 			</NavLink>

@@ -4,7 +4,7 @@ import { Card, ListGroup } from 'react-bootstrap';
 const SectionCard = (props) => {
     return (
         <section>
-            <Card style={{ width: '40rem', background: '#d4fff4', marginBottom: "40px", borderRadius: "3%", boxShadow: "5px 5px 5px #0b2e13" }}>
+            <Card className="sectionCard">
                 <Card.Body>
                     { 
                         props.children.map(child => {
