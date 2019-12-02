@@ -60,7 +60,7 @@ export default class HireMe extends React.Component {
                 </SectionCard>
                 <SectionCard id="tech">
                     <CardTitle>TECHNOLOGIES I'VE USED</CardTitle>
-                    <div style={{ display: "flex", flexDirection: "row" }}>
+                    <div className="techList">
                         <TechList listItems={ this.techList.slice(0, 3) } />
                         <TechList listItems={ this.techList.slice(3, 6) } />
                         <TechList listItems={ this.techList.slice(6) } />

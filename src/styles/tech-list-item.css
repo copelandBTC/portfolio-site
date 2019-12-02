@@ -1,0 +1,13 @@
+.listItem {
+    background: transparent;
+    border: transparent;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.itemName {
+    margin-top: 10px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}

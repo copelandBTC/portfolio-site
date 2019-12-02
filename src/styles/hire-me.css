@@ -14,3 +14,8 @@ hr {
     border-right-width: 150px;
     border-color: #0b2e13; 
 }
+
+.techList {
+    display: flex;
+    flex-direction: row;
+}

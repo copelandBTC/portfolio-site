@@ -1,9 +1,10 @@
 import React from "react";
+import "../styles/card-title.css";
 
 const CardTitle = (props) => {
     return (
         <div>
-            <h2 style={{display: "flex", justifyContent: "center"}}>
+            <h2 className="cardTitle">
                 { props.children }
             </h2>
         </div>
