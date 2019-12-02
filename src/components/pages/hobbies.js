@@ -56,7 +56,7 @@ export default class Hobbies extends React.Component {
                     <Card.Text>
                         Human languages, not programming languages. A long time ago, I discovered a passion for learning
                         foreign languages. I may be a bit rusty, but I translated this whole page into Spanish. ¡Guau! Just
-                        see for yourself. // FINGER POINT DOWN EMOJI.
+                        see for yourself.
                     </Card.Text>
                     <div>
                         <Button className="button">English</Button>

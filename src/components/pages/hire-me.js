@@ -7,7 +7,15 @@ import { Card, Button } from 'react-bootstrap';
 import SectionCard from '../section-card';
 import CardTitle from '../card-title';
 import Page from './page';
-import { rootCertificates } from 'tls';
+import JavaScriptImage from '../../assets/images/javascript.png';
+import PythonImage from '../../assets/images/python.png';
+import TypeScriptImage from '../../assets/images/typescript.png';
+import ReactImage from '../../assets/images/react.png';
+import ReduxImage from '../../assets/images/redux.png';
+import VueImage from '../../assets/images/vue.png';
+import CSharpImage from '../../assets/images/csharp.png';
+import JavaImage from '../../assets/images/java.png';
+import GitImage from '../../assets/images/git.png';
 
 export default class HireMe extends React.Component {
     state = {};
@@ -15,15 +23,15 @@ export default class HireMe extends React.Component {
     constructor(props) {
         super();
         this.techList = [
-            <TechListItem imgSrc="https://via.placeholder.com/75" itemName="JavaScript" />,
-            <TechListItem imgSrc="https://via.placeholder.com/75" itemName="TypeScript" />,
-            <TechListItem imgSrc="https://via.placeholder.com/75" itemName="React" />,
-            <TechListItem imgSrc="https://via.placeholder.com/75" itemName="Redux" />,
-            <TechListItem imgSrc="https://via.placeholder.com/75" itemName="Vue" />,
-            <TechListItem imgSrc="https://via.placeholder.com/75" itemName="C#" />,
-            <TechListItem imgSrc="https://via.placeholder.com/75" itemName="Java" />,
-            <TechListItem imgSrc="https://via.placeholder.com/75" itemName="Python" />,
-            <TechListItem imgSrc="https://via.placeholder.com/75" itemName="Git" />,
+            <TechListItem imgSrc={ JavaScriptImage } itemName="JavaScript" />,
+            <TechListItem imgSrc={ TypeScriptImage } itemName="TypeScript" />,
+            <TechListItem imgSrc={ ReactImage } itemName="React" />,
+            <TechListItem imgSrc={ ReduxImage } itemName="Redux" />,
+            <TechListItem imgSrc={ VueImage } itemName="Vue" />,
+            <TechListItem imgSrc={ CSharpImage } itemName="C#" />,
+            <TechListItem imgSrc={ JavaImage } itemName="Java" />,
+            <TechListItem imgSrc={ PythonImage } itemName="Python" />,
+            <TechListItem imgSrc={ GitImage } itemName="Git" />,
         ];
     }
 

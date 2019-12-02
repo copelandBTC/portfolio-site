@@ -5,9 +5,14 @@
     margin-right: 25px;
 }
 
+.listImage {
+    width: 75px;
+    height: 75px;
+}
+
 .itemName {
     margin-top: 10px;
-    font-size: 10px;
+    font-size: 15px;
     display: flex;
     justify-content: center;
 }
