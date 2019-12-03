@@ -15,8 +15,14 @@ export default class NavButton extends React.Component {
   }
 
   componentDidMount() {
-	// Minify the path string so it's a little cleaner-looking in the browser
-	const modifiedButtonText = this.props.buttonText.split(" ").join("").toLowerCase();
+	let modifiedButtonText;
+
+	if (this.props.buttonText === "Home") {
+		modifiedButtonText = "";
+	} else {
+		// Minify the path string so it's a little cleaner-looking in the browser
+		modifiedButtonText = this.props.buttonText.split(" ").join("").toLowerCase();
+	}
 
 	this.setState({ buttonText : this.props.buttonText });
 	this.setState({ path : modifiedButtonText });

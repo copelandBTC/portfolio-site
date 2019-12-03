@@ -3,7 +3,15 @@ import NavButton from '../nav-button';
 import Page from './page';
 import SectionCard from '../section-card';
 import CardTitle from '../card-title';
-import { Card, Button } from 'react-bootstrap';
+import { Card, Button, Carousel } from 'react-bootstrap';
+import Dragonair from '../../assets/images/dragonair.png';
+import KyloRen from '../../assets/images/kylo.png';
+import Tiger from '../../assets/images/tiger.png';
+import YouTube from '../../assets/images/youtube.png';
+import Gif from '../../assets/images/gif.png';
+import British from '../../assets/images/british.png';
+import America from '../../assets/images/america.png';
+import Spain from '../../assets/images/spanish.svg';
 import "../../styles/hobbies.css";
 
 
@@ -25,32 +33,30 @@ export default class Hobbies extends React.Component {
     render() {
         return (
             <Page>
-                <SectionCard id="about-hobbies">
-                    <CardTitle>I Have Quite a Few Hobbies</CardTitle>
-                    <Card.Text>
-                        I do in fact have a life outside the world of programming, although programming
-                        itself was a hobby for me before it became a career. I have a lot of interests,
-                        and it all boils down to two fundamental facts about me: I love to learn, and I
-                        love to create. 
-                    </Card.Text>
-                </SectionCard>
                 <SectionCard id="programming">
                     <CardTitle>My Personal Programming Projects</CardTitle>
-                    <Card.Text>
-                        <a href="https://github.com/copelandBTC">Here</a> is where you can find some of my personal coding projects, and even some old
-                        school projects I did back in the day, although if you ask me those are a lot less
-                        fun. 
-                    </Card.Text>
+                    <div className="projectIconContainer">
+                        <a href="https://github.com/copelandBTC/YouTubeRake" target="_blank">
+                            <img id="youtube" src={YouTube} alt="YouTube Project" />
+                        </a>
+                        <a href="https://github.com/copelandBTC/Giffer" target="_blank">
+                            <img id="gif" src={Gif} alt="Gif Project" />
+                        </a>
+                    </div>
                 </SectionCard>
                 <SectionCard id="art">
                     <CardTitle>My Art</CardTitle>
-                    <Card.Text>
-                        I've been drawing since I could put a pencil to paper. It's mostly digital nowadays,
-                        but here's a sample of what I've done. 
-                    </Card.Text>
-                    <div>
-                        // Put image carousel here
-                    </div>
+                    <Carousel>
+                        <Carousel.Item>
+                            <img className="art" src={Dragonair} alt="Picture 1" />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="art" src={KyloRen} alt="Picture 2" />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="art" src={Tiger} alt="Picture 3" />
+                        </Carousel.Item>
+                    </Carousel>
                 </SectionCard>
                 <SectionCard id="languages">
                     <CardTitle>Languages I know</CardTitle>
@@ -60,9 +66,9 @@ export default class Hobbies extends React.Component {
                         see for yourself.
                     </Card.Text>
                     <div className="languageButtonContainer">
-                        <Button className="button languageButton">English</Button>
-                        <Button className="button languageButton">Español</Button>
-                        <Button className="button languageButton">English (American)</Button>
+                        <Button style={{ background: `url(${British})`, backgroundSize: "90%", backgroundRepeat: "no-repeat" }} className="button languageButton"></Button>
+                        <Button style={{ background: `url(${Spain})`, backgroundSize: "100%", backgroundRepeat: "no-repeat" }} className="button languageButton"></Button>
+                        <Button style={{ background: `url(${America})`, backgroundSize: "110%", backgroundRepeat: "no-repeat" }} className="button languageButton"></Button>
                     </div>
                 </SectionCard>
             </Page>

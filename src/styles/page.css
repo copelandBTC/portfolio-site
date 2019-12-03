@@ -25,6 +25,8 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: row;
     margin-top: 75px;
     margin-bottom: 150px;
 }
@@ -34,11 +36,6 @@ footer {
     margin-bottom: 75px;
     display: flex;
     justify-content: center;
-}
-
-.NavButtonSection {
-    display: flex;
-    flex-direction: row;
 }
 
 .sectionCard {

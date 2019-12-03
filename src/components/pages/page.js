@@ -14,11 +14,10 @@ export default class Page extends React.Component {
             <div>
                 <div>
                     <header>
-                        <div className="NavButtonSection">
-                            <NavButton buttonText = "Why You Should Hire Me" />
-                            <NavButton buttonText = "What I Do For Fun" />
-                            <NavButton buttonText = "Contact" />
-                        </div>
+                        <NavButton buttonText = "Home" />
+                        <NavButton buttonText = "Why You Should Hire Me" />
+                        <NavButton buttonText = "What I Do For Fun" />
+                        <NavButton buttonText = "Contact" />
                     </header>
                 </div>
                 <div></div>
