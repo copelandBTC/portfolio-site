@@ -1,0 +1,9 @@
+.languageButtonContainer {
+    display: flex;
+    margin-top: 50px;
+}
+
+.languageButton {
+    margin-left: 10px;
+    margin-right: 10px;
+}

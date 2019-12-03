@@ -4,6 +4,7 @@ import Page from './page';
 import SectionCard from '../section-card';
 import CardTitle from '../card-title';
 import { Card, Button } from 'react-bootstrap';
+import "../../styles/hobbies.css";
 
 
 export default class Hobbies extends React.Component {
@@ -58,10 +59,10 @@ export default class Hobbies extends React.Component {
                         foreign languages. I may be a bit rusty, but I translated this whole page into Spanish. ¡Guau! Just
                         see for yourself.
                     </Card.Text>
-                    <div>
-                        <Button className="button">English</Button>
-                        <Button className="button">Español</Button>
-                        <Button className="button">English (American)</Button>
+                    <div className="languageButtonContainer">
+                        <Button className="button languageButton">English</Button>
+                        <Button className="button languageButton">Español</Button>
+                        <Button className="button languageButton">English (American)</Button>
                     </div>
                 </SectionCard>
             </Page>
