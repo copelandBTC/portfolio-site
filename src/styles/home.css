@@ -1,0 +1,51 @@
+.greeting {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 100px;
+    font-weight: bolder;
+    color: #1f1f1f;
+}
+
+.buttonContainer {
+    margin-top: 125px;
+}
+
+.firstRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.secondRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#hireme {
+    color: #0b2e13;
+    background: #23ffb6;
+    border-color: #23ffb6;
+}
+
+#hobbies {
+    color: #292600;
+    background: #fffaa1;
+    border-color: #fffaa1;
+}
+
+#contact {
+    color: #013030;
+    background: #7afdff;
+    border-color: #7afdff;
+}
+
+.homeButton {
+    width: 150px; 
+    height: 150px;
+    margin: 10px;
+    border-radius: 75px; 
+    font-size: 20px;
+    text-align: center;
+}
